@@ -16,9 +16,15 @@ const { LoginRouter } = require("./routes/Login.routes")
 const { ProductRouter } = require("./routes/products.routes")
 const { CarousalRouter } = require("./routes/carousal.routes")
 const { RelatedProductorRouter } = require("./routes/relatedProduct.routes")
+<<<<<<< HEAD
 const {claymagixRouter} = require("./routes/claymagix.routes")
 const router = require("./routes/woodmagix.routes");
 const skyaceRouter = require('./routes/skyace.routes'); 
+=======
+const { ClaymagixRouter} = require("./routes/claymagix.routes")
+const {  WoodmagixRouter } = require("./routes/woodmagix.routes")
+const { SkyaceRouter } = require("./routes/skyace.routes")
+>>>>>>> df1b5baf362c31eb351d6d49962450c2b5714702
 require("dotenv").config()
 
 const app = express()
@@ -41,7 +47,9 @@ app.use("/related", RelatedProductorRouter);
 app.use("/woodmagix", router)
 app.use("/skyace", skyaceRouter);
 
-app.use("/claymagix", claymagixRouter);
+app.use("/claymagix", ClaymagixRouter);
+app.use("/woodmagix",WoodmagixRouter);
+app.use("/skyace",SkyaceRouter)
 
 const port = process.env.PORT || 4000;
 
