@@ -17,6 +17,8 @@ const { ProductRouter } = require("./routes/products.routes")
 const { CarousalRouter } = require("./routes/carousal.routes")
 const { RelatedProductorRouter } = require("./routes/relatedProduct.routes")
 const {claymagixRouter} = require("./routes/claymagix.routes")
+const router = require("./routes/woodmagix.routes");
+const skyaceRouter = require('./routes/skyace.routes'); 
 require("dotenv").config()
 
 const app = express()
@@ -36,6 +38,8 @@ app.use("/events", EventRouter);
 app.use("/login", LoginRouter);
 app.use("/carousal", CarousalRouter);
 app.use("/related", RelatedProductorRouter);
+app.use("/woodmagix", router)
+app.use("/skyace", skyaceRouter);
 
 app.use("/claymagix", claymagixRouter);
 

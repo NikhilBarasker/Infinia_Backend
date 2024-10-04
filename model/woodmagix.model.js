@@ -20,9 +20,7 @@ const woodmagixSchema = mongoose.Schema({
   title2: {
     type: String,
   },
-  para: {
-    type: String,
-  },
+  para: description,
   info: description,
   images: [{ type: String }],
 });

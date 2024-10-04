@@ -6,13 +6,13 @@ const {
   getWoodmagixById,
   updateWoodmagix,
   deleteWoodmagix,
-} = require("../controllers/woodmagixController");
+} = require("../controller/woodmagix.controller");
 
 // Routes for CRUD operations
-router.post("/", createWoodmagix);
-router.get("/", getAllWoodmagix);
-router.get("/:id", getWoodmagixById);
-router.put("/:id", updateWoodmagix); 
-router.delete("/:id", deleteWoodmagix);
+router.post("/create", createWoodmagix);
+router.get("/getwoodmagix", getAllWoodmagix);
+// router.get("/:id", getWoodmagixById);
+router.patch("/updatewoodmagix/:id", updateWoodmagix); 
+// router.delete("/:id", deleteWoodmagix);
 
-module.exports = router;
+module.exports = router;  

@@ -24,7 +24,7 @@ const claymagixSchema = mongoose.Schema({
   para: {
     type: String
   },
-  info:description,
+  info:[description],
   images: [
     {type: String}
   ]

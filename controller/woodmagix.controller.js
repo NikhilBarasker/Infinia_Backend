@@ -1,4 +1,4 @@
-const WoodmagixModel = require("../models/woodmagixModel");
+const WoodmagixModel = require("../model/woodmagix.model");
 
 // Create a new document
 const createWoodmagix = async (req, res) => {

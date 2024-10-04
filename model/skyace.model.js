@@ -27,7 +27,7 @@ const skyaceSchema = mongoose.Schema({
     type:String
   },
   brochure: {
-    type:File
+    type:String
   },
   info:details,
   images: {
@@ -35,7 +35,7 @@ const skyaceSchema = mongoose.Schema({
   }
 })
 
-const SkyaceModel = mongoose.Model("skyace", skyaceSchema);
+const SkyaceModel = mongoose.model("skyace", skyaceSchema);
 module.exports = {
   SkyaceModel
 }

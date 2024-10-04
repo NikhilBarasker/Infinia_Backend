@@ -3,14 +3,14 @@ const {
   createSkyace,
   updateSkyace,
   getSkyace,
-} = require("../controllers/skyaceController");
+} = require("../controller/skyace.controller");
 const router = express.Router();
 
 router.post("/skyace", createSkyace);
 
-router.patch("/skyace", updateSkyace);
+router.patch("/updateskyace", updateSkyace);
 
-router.get("/skyace", getSkyace);
+router.get("/getskyace", getSkyace);
 
 
 module.exports = router;
